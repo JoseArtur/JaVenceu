@@ -2,9 +2,16 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    MaterialApp(
+    MyApp()
+ 
+  );
+}
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.grey[100],
+        backgroundColor: Colors.grey[300],
         body: Center(
           child: Image(
             image: AssetImage('images/pngflow.com (1).png'),
@@ -15,6 +22,6 @@ void main() {
           backgroundColor: Colors.red[600],
         ),
       ),
-    ),
-  );
+    );
+  }
 }
